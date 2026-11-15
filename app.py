@@ -124,11 +124,7 @@ load_dotenv()
 
 api_key = os.getenv("GOOGLE_API_KEY")
 
-if not api_key:
-    try:
-        api_key = st.secrets["GOOGLE_API_KEY"]
-    except Exception:
-        api_key = None
+
 
 st.title("PoetLens")
 st.markdown("<h4 style='color:#f8dcdc;'>Transform your photos into soulful poetry</h4>", unsafe_allow_html=True)
