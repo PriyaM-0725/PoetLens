@@ -199,7 +199,7 @@ if uploaded_file is not None:
                 caption = caption_processor.decode(out_ids[0], skip_special_tokens=True)
 
                 # Step 2: Generate poem using Gemini
-                model = genai.GenerativeModel("gemini-2.5-flash")
+                model = genai.GenerativeModel("gemini-3.8-flash")
 
                 if language == "English":
                     prompt = f"""
